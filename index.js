@@ -176,4 +176,22 @@ app.listen(3000, () => {
       - create(): Insert a new record into the specified collection
       - findByIdAndUpdate(): Update a record in the specified collection by its ID
       - findByIdAndDelete(): Delete a record in the specified collection by its ID
+
+    # Additional Code:
+      // # Find a user based on query
+        // app.get('/users', async (req, res) => {
+        //   try {
+        //     const { firstName, lastName } = req.query
+        //     const users = await User.find({ firstName, lastName });
+        //     res.json({
+        //       status: 'SUCCESS',
+        //       data: users
+        //     })
+        //   } catch (error) {
+        //     res.status(500).json({
+        //       status: 'FAILED',
+        //       message: 'Something went wrong'
+        //     })
+        //   }
+        // })
 */
